@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Width With TailwindCss</title>
+  <link href="./src/output.css" rel="stylesheet">
+
+</head>
+<body>
+
+  // simple width
+  <div class="bg-blue-100 w-32 ">
+    <h1 class="text-green-700 ">Hello World</h1>
+  </div>
+
+
+  // Override w-60 with max-w-52
+  <div class="bg-red-600 w-60 max-w-52">
+    <h1 class="text-white ">Hello World</h1>
+  </div>
+
+  // Override w-40 with min-w-52
+  <div class="bg-green-600 w-40 min-w-52">
+    <h1 class="text-white ">Hello World</h1>
+  </div>
+
+  // w-fit means fit according to child width
+  <div class="bg-green-600 w-fit">
+    <h1 class="text-white ">Hello World....</h1>
+  </div>
+
+  // w-1/2 means 50% width
+  <div class="bg-green-600 w-1/2">
+    <h1 class="text-white ">Hello World....</h1>
+  </div>
+
+  // w-1/3 means 45% width
+  <div class="bg-green-600 w-1/3">
+    <h1 class="text-white ">Hello World....</h1>
+  </div>
+
+  // w-1/3 means 25% width
+  <div class="bg-green-600 w-1/4">
+    <h1 class="text-white ">Hello World....</h1>
+  </div>
+
+
+  // hover from w-1/4 to w-1/2
+  <div class="bg-green-600 w-1/4 hover:w-1/2">
+    <h1 class="text-white ">Hello World....</h1>
+  </div>
+
+
+  <!-- // we can't apply width for inline
+  <div class="bg-green-600 w-1/2">
+    <span class="text-white">Hello World</span>
+  </div> -->
+
+  // so we can do inline to block then its working
+  <br>
+  <div class="bg-green-600 w-1/2 inline">
+    <span class="text-white">Hello World</span>
+  </div>
+
+  <br>
+  // so we can also do inline-block then its working
+  <br>
+  <div class="bg-green-600 w-1/2 inline-block">
+    <span class="text-white">Hello World</span>
+  </div>
+
+  <br>
+  // we can take customize width throgh []
+  <div class="bg-green-600 w-[350px]">
+    <h1 class="text-white">Hello World</h1>
+  </div>
+
+  
+
+
+  
+
+
+  
+</body>
+</html>
