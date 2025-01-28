@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Size With TailwindCss</title>
+  <link href="./src/output.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-500">
+
+  // Size is a combination of width and height
+  <div class="bg-blue-100 size-40 ">
+    <h1 class="text-green-700 ">Hello World</h1>
+  </div>
+
+  <br>
+
+  // IN this case size working just for width
+  <div class="bg-yellow-800 size-1/2 ">
+    <h1 class="text-green-700 ">Hello World</h1>
+  </div>
+
+  <br>
+
+  // In this case size work for both width and height 
+  for its parent tag
+  <div class="bg-blue-500 h-screen ">
+    <div class="bg-green-600 size-1/2">
+    <h1 class="text-red-700 ">Hello World</h1>
+    </div>
+  </div>
+
+  <br>
+  
+  // we can use size-full
+  <div class="bg-blue-500 h-screen ">
+    <h1 class="text-orange-700 bg-amber-400 size-full">Hello World</h1>
+  </div>
+
+  <br>
+
+  // customize 
+  <div class="bg-blue-900 size-[300px] ">
+    <h1 class="text-green-700 ">Hello World</h1>
+  </div>
+
+  <br>
+
+  // hover
+  <div class="bg-blue-900 size-[300px] hover:size-[500px] hover:bg-amber-500 ">
+    <h1 class="text-green-700 ">Hello World</h1>
+  </div>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+    
+  
+  
+
+  
+
+
+  
+
+
+  
+</body>
+</html>
