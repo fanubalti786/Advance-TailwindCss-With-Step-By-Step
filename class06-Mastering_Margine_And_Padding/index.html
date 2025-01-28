@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mastering Margin And Padding</title>
+  <link href="./src/output.css" rel="stylesheet">
+
+</head>
+<body class="p-6 bg-gray-100 space-y-6">
+
+  <!-- Padding Examples -->
+  <div class="bg-blue-100 p-4">
+    <p class="font-bold">Padding Example 1:</p>
+    <p>This box has padding of `p-4` (1rem).</p>
+  </div>
+  
+  <div class="bg-blue-100 px-6 py-2">
+    <p class="font-bold">Padding Example 2:</p>
+    <p>This box has horizontal padding (`px-6`) and vertical padding (`py-2`).</p>
+  </div>
+  
+  <div class="bg-blue-100 p-0">
+    <p class="font-bold">Padding Example 3:</p>
+    <p>This box has no padding (`p-0`).</p>
+  </div>
+
+  <!-- Margin Examples -->
+  <div class="bg-green-100 m-4">
+    <p class="font-bold">Margin Example 1:</p>
+    <p>This box has margin of `m-4` (1rem).</p>
+  </div>
+  
+  <div class="bg-green-100 mt-6 mb-2">
+    <p class="font-bold">Margin Example 2:</p>
+    <p>This box has top margin (`mt-6`) and bottom margin (`mb-2`).</p>
+  </div>
+  
+  <div class="bg-green-100 m-0">
+    <p class="font-bold">Margin Example 3:</p>
+    <p>This box has no margin (`m-0`).</p>
+  </div>
+
+  <!-- Combined Padding and Margin -->
+  <div class="bg-purple-100 p-6 m-6">
+    <p class="font-bold">Combined Example:</p>
+    <p>This box has both padding (`p-6`) and margin (`m-6`).</p>
+
+    <br>
+
+    // difference between block and inline tag
+    <div>
+      // h1 bydefault block
+      <h1 class="bg-orange-500 p-4">Hello World</h1>
+      <br>
+
+      // span bydefaul inline
+      <br>
+      <br>
+      <span class="bg-blue-600 p-[16px] inline"> Hello World</span>
+      <br>
+      <br>
+      // we can convert inline to block
+      <span class="bg-blue-600 p-4 block"> Hello World</span>
+      <br>
+      // how to apply one pixel padding and margin
+      <h1 class=" bg-zinc-600">How to apply one pixel padding and margin</h1>
+      <h1 class="p-px m-px bg-zinc-300">How to apply one pixel padding and margin</h1>
+
+    </div>
+  </div>
+</body>
+</html>
