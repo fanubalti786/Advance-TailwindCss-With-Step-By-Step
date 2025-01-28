@@ -1,0 +1,2 @@
+Understanding Tailwind's color palette: Learn about the default color scale and how to customize it to match your brand's aesthetics.
+Applying colors to elements: Discover various ways to add colors to text, backgrounds, borders, and more using Tailwind's utility classes.
