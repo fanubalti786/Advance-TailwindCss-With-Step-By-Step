@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Width With TailwindCss</title>
+  <link href="./src/output.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-500 h-screen">
+
+  // simple height
+  <div class="bg-blue-100 h-32 ">
+    <h1 class="text-green-700 ">Hello World</h1>
+  </div>
+
+
+  // Override h-60 with max-h-52
+  <div class="bg-red-600 h-60 max-h-52">
+    <h1 class="text-white ">Hello World</h1>
+  </div>
+
+  // Override h-40 with min-h-52
+  <div class="bg-green-600 h-40 min-h-52">
+    <h1 class="text-white ">Hello World</h1>
+  </div>
+
+  <!-- // h-fit can't work
+  <div class="bg-green-600 h-fit">
+    <h1 class="text-white ">Hello World....</h1>
+  </div> -->
+
+  // h-1/2 means 50% width but its parent tage must have h-screen
+  <div class="bg-green-600 h-1/2">
+    <h1 class="text-white ">Hello World....</h1>
+  </div>
+
+  // h-1/2 means 45% width but its parent tage must have h-screen
+  <div class="bg-green-600 h-1/3">
+    <h1 class="text-white ">Hello World....</h1>
+  </div>
+
+  // h-1/4 means 25% width but its parent tage must have h-screen
+  <div class="bg-green-600 h-1/4">
+    <h1 class="text-white ">Hello World....</h1>
+  </div>
+
+
+  // hover from h-1/4 to h-1/2
+  <div class="bg-green-600 h-1/4 hover:h-1/2">
+    <h1 class="text-white ">Hello World....</h1>
+  </div>
+
+
+  // we can apply height for inline
+  <div class="bg-green-600 h-1/2">
+    <span class="text-white">Hello World</span>
+  </div>
+
+
+  <br>
+  // so we can also apply height for inline-block 
+  <br>
+  <div class="bg-green-600 h-1/2 inline-block">
+    <span class="text-white">Hello World</span>
+  </div>
+
+  <br>
+  // we can take customize height throgh []
+  <div class="bg-red-600 h-[350px]">
+    <h1 class="text-white">Hello World</h1>
+  </div>
+
+
+  // h-screen within h-screen
+  <div class="bg-red-600 h-screen">
+    <h1 class="text-white">Hello World</h1>
+  </div> 
+  <hr>
+  // h-screen within h-full within h-full / Working
+  <div class="bg-red-600 h-full">
+    <h1 class="text-white bg-blue-500 h-full">Hello World</h1>
+  </div> 
+
+  // h-screen within h-50 within h-screen Working but overflow the div
+  <div class="bg-red-600 h-50">
+    <h1 class="text-white bg-blue-500 h-screen">Hello World</h1>
+    <hr>
+    <button type="button" class="bg-green-600 py-2 px-4 m-2 rounded cursor-pointer">!click</button>
+  </div> 
+
+  
+
+  <!-- // h-screen within h-80 within h-full / Working and adjust condition
+  <div class="bg-red-600 h-80">
+    <h1 class="text-white bg-blue-500">Hello World</h1>
+  </div>   -->
+
+  
+
+  
+
+  
+
+
+    
+  
+  
+
+  
+
+
+  
+
+
+  
+</body>
+</html>
