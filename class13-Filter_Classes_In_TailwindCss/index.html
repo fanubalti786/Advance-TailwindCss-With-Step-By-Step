@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Classes In Tailwind</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body class="">
+    <h1 class="bg-blue-400">How We Can Blur Images</h1>
+    <div class="flex h-screen bg-amber-300 [&>*]:m-4">
+      <div>
+        <h1 class="font-bold">simple image</h1>
+        <img src="image.PNG" alt="" class="size-70" />
+      </div>
+      <div>
+        <h1 class="font-bold">blur image</h1>
+        <img src="image.PNG" alt="" class="size-70 blur" />
+      </div>
+      <div>
+        <h1 class="font-bold">blur-sm image</h1>
+        <img src="image.PNG" alt="" class="size-70 blur-sm" />
+      </div>
+      <div>
+        <h1 class="font-bold">blur-md image</h1>
+        <img src="image.PNG" alt="" class="size-70 blur-md" />
+      </div>
+      <div>
+        <h1 class="font-bold">blur-lg image</h1>
+        <img src="image.PNG" alt="" class="size-70 blur-lg" />
+      </div>
+      <div>
+        <h1 class="font-bold">blur-3xl image</h1>
+        <img src="image.PNG" alt="" class="size-70 blur-3xl" />
+      </div>
+    </div>
+
+    <h1 class="bg-blue-400">How We Can Blur texts</h1>
+    <div class="">
+      <h1 class="blur-md font-bold">Heading Blur</h1>
+      <hr>
+      <p class="blur-sm font-bold">Paragraph Blur</p>
+    </div>
+
+
+    <h1 class="bg-blue-400">How We manage brightness of image</h1>
+    <div class=" h-screen flex [&>*]:m-4 bg-green-400">
+
+      <div>
+        <h1 class="font-bold"> brightness-50 </h1>
+        <img src="image.PNG" alt="" class="size-70 brightness-50" />
+      </div>
+      <div>
+        <h1 class="font-bold">brightness-100</h1>
+        <img src="image.PNG" alt="" class="size-70 brightness-100" />
+      </div>
+      <div>
+        <h1 class="font-bold">brightness-125</h1>
+        <img src="image.PNG" alt="" class="size-70 brightness-125" />
+      </div>
+      <div>
+        <h1 class="font-bold">brightness-200</h1>
+        <img src="image.PNG" alt="" class="size-70 brightness-200" />
+      </div>
+
+    </div>
+
+    <h1 class="">We Can manage brightness of Text but No need</h1>
+
+
+    <h1 class="bg-blue-400">How We manage Contrast of image</h1>
+    <div class=" h-screen flex [&>*]:m-4 bg-green-400">
+
+      <div>
+        <h1 class="font-bold"> contrast-50 </h1>
+        <img src="image.PNG" alt="" class="size-70 contrast-50" />
+      </div>
+      <div>
+        <h1 class="font-bold">contrast-100</h1>
+        <img src="image.PNG" alt="" class="size-70 contrast-100" />
+      </div>
+      <div>
+        <h1 class="font-bold">contrast-125</h1>
+        <img src="image.PNG" alt="" class="size-70 contrast-125" />
+      </div>
+      <div>
+        <h1 class="font-bold">contrast-200</h1>
+        <img src="image.PNG" alt="" class="size-70 contrast-200" />
+      </div>
+
+    </div>
+
+
+    <h1 class="bg-blue-400">How We manage grayscale of image</h1>
+    <div class=" h-screen flex [&>*]:m-4 bg-green-400">
+
+      <div>
+        <h1 class="font-bold"> grayscale-50 </h1>
+        <img src="image.PNG" alt="" class="size-70 grayscale-50" />
+      </div>
+      <div>
+        <h1 class="font-bold">grayscale-100</h1>
+        <img src="image.PNG" alt="" class="size-70 grayscale-100" />
+      </div>
+      <div>
+        <h1 class="font-bold">grayscale-125</h1>
+        <img src="image.PNG" alt="" class="size-70 grayscale-125" />
+      </div>
+      <div>
+        <h1 class="font-bold">grayscale-200</h1>
+        <img src="image.PNG" alt="" class="size-70 grayscale-200" />
+      </div>
+
+    </div>
+
+
+    <h1 class="bg-blue-400">How We can manage invert style of image</h1>
+    <div class=" h-screen flex [&>*]:m-4 bg-green-400">
+
+      <div>
+        <h1 class="font-bold"> invert-50 </h1>
+        <img src="image.PNG" alt="" class="size-70 invert-50" />
+      </div>
+      <div>
+        <h1 class="font-bold">inverte-100</h1>
+        <img src="image.PNG" alt="" class="size-70 invert-100" />
+      </div>
+      <div>
+        <h1 class="font-bold">invert-125</h1>
+        <img src="image.PNG" alt="" class="size-70 invert-125" />
+      </div>
+      <div>
+        <h1 class="font-bold">invert-200</h1>
+        <img src="image.PNG" alt="" class="size-70 invert-200" />
+      </div>
+
+    </div>
+
+
+    <h1 class="bg-blue-400">How We can manage hue-rotate style of image</h1>
+    <div class=" h-screen flex [&>*]:m-4 bg-green-400">
+
+      <div>
+        <h1 class="font-bold"> hue-rotate-50 </h1>
+        <img src="image.PNG" alt="" class="size-70 hue-rotate-50 " />
+      </div>
+      <div>
+        <h1 class="font-bold">hue-rotate-100</h1>
+        <img src="image.PNG" alt="" class="size-70 hue-rotate-100 " />
+      </div>
+      <div>
+        <h1 class="font-bold">hue-rotate-125 </h1>
+        <img src="image.PNG" alt="" class="size-70 hue-rotate-125 " />
+      </div>
+      <div>
+        <h1 class="font-bold">hue-rotate-200 </h1>
+        <img src="image.PNG" alt="" class="size-70 hue-rotate-200 " />
+      </div>
+
+    </div>
+
+  </body>
+</html>
