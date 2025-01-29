@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactiviy Classes In Tailwind</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body class="">
+    <div class="flex">
+      // simple button
+      <button class="bg-blue-700 rounded-md m-4 p-2 text-white">!Click</button>
+      // button with hover
+      <button
+        class="bg-blue-700 rounded-md m-4 p-2 text-white hover:bg-gradient-to-b to-blue-800 from-red-800 hover:p-4"
+      >
+        !Click
+      </button>
+      // button with focus
+      <button
+        class="bg-blue-700 rounded-md m-4 p-2 text-white focus:bg-gradient-to-b to-blue-800 from-red-800 focus:p-4"
+      >
+        !Click
+      </button>
+      // button with active
+      <button
+        class="bg-blue-700 rounded-md m-4 p-2 text-white active:bg-green-900 active:p-4"
+      >
+        !Click
+      </button>
+      // button with all Interactiviy
+      <button
+        class="bg-blue-700 rounded-md m-4 p-2 text-white hover:bg-pink-600 focus:bg-orange-300 active:bg-green-900"
+      >
+        !Click
+      </button>
+    </div>
+
+    // We can hover according to parent div
+    <div class="hover:bg-amber-300">
+      <a class="hover:text-blue-800 cursor-pointer">Click me</a>
+      <p class="hover:text-blue-800 cursor-pointer">Click me</p>
+      <h1 class="hover:text-blue-800 cursor-pointer">Click me</h1>
+    </div>
+
+    // Same we can do with group name
+    <div class="group">
+      <a class="group-hover:text-blue-800 group-hover:bg-amber-400 block cursor-pointer">Click me</a>
+      <p class="group-hover:text-blue-800 group-hover:bg-amber-400 cursor-pointer">Click me</p>
+      <h1 class="group-hover:text-blue-800 group-hover:bg-amber-400 cursor-pointer">Click me</h1>
+    </div>
+  </body>
+</html>
