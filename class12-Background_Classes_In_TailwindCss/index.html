@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Classes In Tailwind</title>
+  <link href="./src/output.css" rel="stylesheet">
+
+</head>
+<body class="bg-blue-400">
+ 
+  // First way to insert background-image
+  <div class="flex [&>*]:m-4" >
+    <div class="size-96 bg-amber-300 bg-no-repeat bg-center " style="background-image: url(image.PNG);">
+      background-image with bg-center
+    </div>
+
+    <div class="size-96 bg-amber-300 bg-no-repeat bg-cover " style="background-image: url(image.PNG);">
+      background-image with bg-cover
+    </div>
+
+    <div class="size-96 bg-amber-300 bg-no-repeat bg-center bg-contain " style="background-image: url(image.PNG);">
+      background-image with container
+    </div>
+  </div>
+
+
+  // Second way to insert background-image
+  <div class="flex [&>*]:m-4" >
+    <div class="size-96 bg-amber-300 bg-no-repeat bg-center bg-[url('image.PNG')] ">
+      background-image with bg-center
+    </div>
+
+    <div class="size-96 bg-amber-300 bg-no-repeat bg-cover bg-[url('image.PNG')] ">
+      background-image with bg-cover
+    </div>
+
+    <div class="size-96 bg-amber-300 bg-no-repeat bg-center bg-contain bg-[url('image.PNG')] ">
+      background-image with container
+    </div>
+  </div>
+  
+  // How we can use gradient with different angle
+  <div class="flex [&>*]:mx-2">
+    <div class="size-70 gradient bg-gradient-to-t to-green-500 from-red-500">
+      Top to Bottom gradient
+    </div>
+  
+    <div class="size-70 gradient bg-gradient-to-b to-green-500 from-red-500">
+      Bottom to Top gradient
+    </div>
+
+    <div class="size-70 gradient bg-gradient-to-l to-green-500 from-red-500">
+      Left to Right gradient
+    </div>
+
+    <div class="size-70 gradient bg-gradient-to-r to-green-500 from-red-500">
+      Right to Left gradient
+    </div>
+
+    <div class="size-70 gradient bg-gradient-to-tl to-green-500 from-red-500">
+      Top_Left to Bottom_Right
+    </div>
+
+    <div class="size-70 gradient bg-gradient-to-bl to-green-500 from-red-500">
+      Bottom_left to Top_Right
+    </div>
+
+  </div>
+
+  <hr class="my-2">
+  
+  <div class="flex h-screen bg-black">
+
+    <div class="size-70 bg-yellow-300 m-4 rounded-full shadow-orange-400 shadow-2xl">
+    </div>
+
+    <div class="size-70 bg-yellow-300 m-4 shadow-red-600 shadow-inner">
+    </div>
+
+   
+
+  </div>
+  
+
+  
+  
+
+  
+
+
+</body>
+</html>
