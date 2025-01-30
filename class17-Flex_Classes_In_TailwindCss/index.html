@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex In TailwindCss</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body class="">
+    // flex flex-row-reverse conditions
+    <div class="bg-gray-300 h-40
+     flex flex-row-reverse [&>*]:m-2">
+      <div class="bg-red-300 size-20">1</div>
+      <div class="bg-blue-300 size-20">2</div>
+      <div class="bg-yellow-300 size-20">3</div>
+      <div class="bg-green-300 size-20">4</div>
+    </div>
+
+    
+
+    // flex flex-col-reverse condition
+    <div class="bg-gray-300 h-screen
+     flex flex-col-reverse [&>*]:m-2">
+      <div class="bg-red-300 size-20">1</div>
+      <div class="bg-blue-300 size-20">2</div>
+      <div class="bg-yellow-300 size-20">3</div>
+      <div class="bg-green-300 size-20">4</div>
+    </div>
+
+    // flex flex-row justify-center
+    <div class="bg-gray-300 h-screen
+     flex flex-row justify-center [&>*]:m-2">
+      <div class="bg-red-300 size-20">1</div>
+      <div class="bg-blue-300 size-20">2</div>
+      <div class="bg-yellow-300 size-20">3</div>
+      <div class="bg-green-300 size-20">4</div>
+    </div>
+
+    // flex flex-column justify-center
+    <div class="bg-gray-300 h-screen
+     flex flex-col justify-center [&>*]:m-2">
+      <div class="bg-red-300 size-20">1</div>
+      <div class="bg-blue-300 size-20">2</div>
+      <div class="bg-yellow-300 size-20">3</div>
+      <div class="bg-green-300 size-20">4</div>
+    </div>
+
+    // flex flex-row item-center
+    <div class="bg-gray-300 h-screen
+     flex flex-row items-center [&>*]:m-2">
+      <div class="bg-red-300 size-20">1</div>
+      <div class="bg-blue-300 size-20">2</div>
+      <div class="bg-yellow-300 size-20">3</div>
+      <div class="bg-green-300 size-20">4</div>
+    </div>
+
+    // flex flex-col item-center
+    <div class="bg-gray-300 h-screen
+     flex flex-col items-center [&>*]:m-2">
+      <div class="bg-red-300 size-20">1</div>
+      <div class="bg-blue-300 size-20">2</div>
+      <div class="bg-yellow-300 size-20">3</div>
+      <div class="bg-green-300 size-20">4</div>
+    </div>
+
+    // flex flex-row justify-center items-center
+    <div class="bg-gray-300 h-screen
+     flex flex-row justify-center items-center [&>*]:m-2">
+      <div class="bg-red-300 size-20">1</div>
+      <div class="bg-blue-300 size-20">2</div>
+      <div class="bg-yellow-300 size-20">3</div>
+      <div class="bg-green-300 size-20">4</div>
+    </div>
+
+
+    // flex flex-col justify-center items-center
+    <div class="bg-gray-300 h-screen
+     flex flex-col justify-center items-center [&>*]:m-2">
+      <div class="bg-red-300 size-20">1</div>
+      <div class="bg-blue-300 size-20">2</div>
+      <div class="bg-yellow-300 size-20">3</div>
+      <div class="bg-green-300 size-20">4</div>
+    </div>
+
+
+    // flex flex-row items-center justify-between
+    <div class="bg-gray-300 h-screen
+     flex flex-row items-center justify-between [&>*]:m-2">
+      <div class="bg-red-300 size-20">1</div>
+      <div class="bg-blue-300 size-20">2</div>
+      <div class="bg-yellow-300 size-20">3</div>
+      <div class="bg-green-300 size-20">4</div>
+    </div>
+
+
+    // flex flex-col items-center justify-between
+    <div class="bg-gray-300 h-screen
+     flex flex-col items-center justify-between [&>*]:m-2">
+      <div class="bg-red-300 size-20">1</div>
+      <div class="bg-blue-300 size-20">2</div>
+      <div class="bg-yellow-300 size-20">3</div>
+      <div class="bg-green-300 size-20">4</div>
+    </div>
+
+
+    // flex flex-row items-center justify-around
+    <div class="bg-gray-300 h-screen
+     flex flex-row items-center justify-around [&>*]:m-2">
+      <div class="bg-red-300 size-20">1</div>
+      <div class="bg-blue-300 size-20">2</div>
+      <div class="bg-yellow-300 size-20">3</div>
+      <div class="bg-green-300 size-20">4</div>
+    </div>
+
+
+    // flex flex-col items-center justify-around
+    <div class="bg-gray-300 h-screen
+     flex flex-col items-center justify-around [&>*]:m-2">
+      <div class="bg-red-300 size-20">1</div>
+      <div class="bg-blue-300 size-20">2</div>
+      <div class="bg-yellow-300 size-20">3</div>
+      <div class="bg-green-300 size-20">4</div>
+    </div>
+
+
+  // How we can reduce overflow dev and fix the gap
+  <div class="h-screen flex flex-wrap content-start ">
+    <div class="bg-blue-400 size-20"></div>
+    <div class="bg-red-400 size-20"></div>
+    <div class="bg-green-400 size-20"></div>
+    <div class="bg-yellow-400 size-20"></div>
+    <div class="bg-gray-400 size-20"></div>
+    <div class="bg-pink-400 size-20"></div>
+    <div class="bg-orange-400 size-20"></div>
+    <div class="bg-red-800 size-20"></div>
+    <div class="bg-blue-800 size-20"></div>
+    <div class="bg-green-800 size-20"></div>
+    <div class="bg-green-400 size-20"></div>
+    <div class="bg-yellow-400 size-20"></div>
+    <div class="bg-gray-400 size-20"></div>
+    <div class="bg-pink-400 size-20"></div>
+    <div class="bg-gray-400 size-20"></div>
+    <div class="bg-pink-400 size-20"></div>
+    <div class="bg-orange-400 size-20"></div>
+    <div class="bg-red-800 size-20"></div>
+    <div class="bg-blue-800 size-20"></div>
+    <div class="bg-green-800 size-20"></div>
+    <div class="bg-green-400 size-20"></div>
+    <div class="bg-yellow-400 size-20"></div>
+    <div class="bg-gray-400 size-20"></div>
+    <div class="bg-pink-400 size-20"></div>
+
+  </div>
+
+
+
+
+  // How we can reduce overflow dev with fix the gap and 
+  how i can make responsive
+
+  <div class=" flex sm:flex-col flex-wrap gap-1
+  content-start md:flex-row
+   ">
+    <div class="bg-blue-400 size-20"></div>
+    <div class="bg-red-400 size-20"></div>
+    <div class="bg-green-400 size-20"></div>
+    <div class="bg-yellow-400 size-20"></div>
+    <div class="bg-gray-400 size-20"></div>
+    <div class="bg-pink-400 size-20"></div>
+    <div class="bg-orange-400 size-20"></div>
+    <div class="bg-red-800 size-20"></div>
+    <div class="bg-blue-800 size-20"></div>
+    <div class="bg-green-800 size-20"></div>
+    <div class="bg-green-400 size-20"></div>
+    <div class="bg-yellow-400 size-20"></div>
+    <div class="bg-gray-400 size-20"></div>
+    <div class="bg-pink-400 size-20"></div>
+    <div class="bg-gray-400 size-20"></div>
+    <div class="bg-pink-400 size-20"></div>
+    <div class="bg-orange-400 size-20"></div>
+    <div class="bg-red-800 size-20"></div>
+    <div class="bg-blue-800 size-20"></div>
+    <div class="bg-green-800 size-20"></div>
+    <div class="bg-green-400 size-20"></div>
+    <div class="bg-yellow-400 size-20"></div>
+    <div class="bg-gray-400 size-20"></div>
+    <div class="bg-pink-400 size-20"></div>
+
+  </div>
+
+
+
+    
+
+  </body>
+</html>
