@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+
+@theme {
+    --breakpoint-sm: 300px;
+    --breakpoint-md: 400px; /* Default 768px hota hai, hum isko change kar rahe hain */
+    --breakpoint-lg: 650px;
+    --breakpoint-xl: 900px;
+    --breakpoint-2xl: 1100px;
+
+    --color-primary: oklch(0.84 0.18 117.33);
+  --color-secondary: oklch(0.53 0.12 118.34);
+  --font-heading: "Inter", sans-serif;
+  --font-body: "Roboto", sans-serif;
+}
+
+
+@layer base {
+    /* Tailwind ki built-in font classes ko customize kar rahe hain */
+    .font-sans {
+      font-family: var(--font-body);
+    }
+    .font-serif {
+      font-family: var(--font-heading);
+    }
+  }
+
+
+
+
+
+
+
